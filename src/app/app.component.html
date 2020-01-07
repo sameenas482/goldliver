@@ -1,0 +1,75 @@
+
+<ion-app >
+    <ion-menu side="start" menuId="m1" class="background">
+      <ion-header class="background"> 
+        <ion-toolbar class="background">  
+          <ion-title class="background"> 
+            <ion-avatar class="profile">
+    <img src="./assets/img/profile.png">
+  </ion-avatar>
+  <h2 class="avatar">jermey joy</h2>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="background" >
+        <ion-list class="background">
+          <ion-menu-toggle class="background">
+          <ion-item Lines="none" routerLink="/home" class="background">
+            <ion-icon name="wallet" slot="start" color="white" >
+  
+            </ion-icon>
+            <ion-label>
+              Wallet
+            </ion-label>
+          </ion-item ></ion-menu-toggle>
+          <ion-menu-toggle class="background">
+          <ion-item  Lines="none" routerLink="/market" class="background" >
+              <ion-icon name="checkbox-outline" slot="start" class="icon" color="white">
+  
+                </ion-icon>
+                <ion-label>
+                  Goldiver Market
+                </ion-label>
+          </ion-item></ion-menu-toggle>
+          <ion-menu-toggle>
+              <ion-menu-toggle>
+                  <ion-item Lines="none" class="background">
+                      <ion-icon name="card" slot="start" click="onLogout()" color="white">
+          
+                        </ion-icon>
+                        <ion-label>
+                          Transaction History
+                        </ion-label>
+                  </ion-item></ion-menu-toggle>
+                  <ion-menu-toggle>
+                      <ion-item Lines="none" class="background">
+                          <ion-icon name="settings" slot="start" click="onLogout()" color="white" >
+              
+                            </ion-icon>
+                            <ion-label>
+                              Setting
+                            </ion-label>
+                      </ion-item></ion-menu-toggle>
+                      <ion-menu-toggle>
+                          <ion-item Lines="none" class="background">
+                              <ion-icon name="help-circle" slot="start" click="onLogout()" color="white" >
+                  
+                                </ion-icon>
+                                <ion-label>
+                                  Help center
+                                </ion-label>
+                          </ion-item></ion-menu-toggle>
+          <ion-item Lines="none" class="background" routerLink="/home">
+              <ion-icon name="exit" slot="start" click="onLogout()" color="white" >
+  
+                </ion-icon>
+                <ion-label>
+                  LogOut
+                </ion-label>
+          </ion-item></ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-app>
+  

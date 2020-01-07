@@ -1,0 +1,41 @@
+// App Styles
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply to the entire application. These 
+// styles are for the entire app and not just one component. Additionally, this 
+// file can hold Sass mixins, functions, and placeholder classes to be imported 
+// and used throughout the application.
+
+.background{
+     
+font-display:white;
+ --ion-color-secondary: #F4CA65;
+ --ion-color-primary:#000000;
+  
+  --ion-background-color:#0D0D21;
+  --ion-text-color: var(--ion-color-secondary);
+
+}
+.icon{
+    --ion-color-primary:#white;
+
+}
+.avatar{
+    margin-left:60px;
+}
+ .profile{
+      margin-top:10px;
+      margin-left:70px;
+      margin-right:50px;
+      size: 100px;
+      height:70px;
+      width:70px;
+  }
+  
+
+@font-face{
+    font-family: Luminari-Regular;
+    src: url('../assets/font/Luminari.ttf');
+}
+*{
+    font-family: Luminari-Regular;
+}

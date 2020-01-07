@@ -1,0 +1,48 @@
+.background{
+    --ion-background-color:#0D0D21;
+}
+.txt{   
+    font-family:Roboto;
+    color:#F4CA65;
+    position: "center";
+    font-size:130%;
+    text-align: "center";
+}
+
+.add{
+    font-family:"Roboto";
+    color:#F4CA65;
+    --ion-color-primary:#383851;
+    width: 40%;
+    //color: black;
+}
+.txt1{
+    font-family:"Roboto";
+    color:#F4CA65;
+}
+.map{
+    font-family:"Roboto";
+    color:black;
+    --ion-color-primary:#F4CA65;
+    
+    width: 40%;
+}
+
+.range{
+    margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;  
+}
+
+.search{
+    
+    font-family: "Roboto";
+    --ion-color-primary:#F4CA65;
+    color:black;
+    
+
+}
+ion-input,ion-item,ion-list,ion-select-option{
+    color: white;
+}

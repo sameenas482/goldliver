@@ -1,0 +1,34 @@
+<ion-header>
+  
+    <ion-toolbar class="bac">
+      <ion-searchbar showCancelButton animated placeholder="search" (ionInput)="sample($event)" ></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="background">
+    <ion-item class="p">
+    <p class="p">Recent Jewellers Tranacted</p></ion-item>
+    <br>
+    <ion-item >
+    <ion-img src="./assets/img/tanishq.jpeg " style="height: 110px;width:90%;">
+    </ion-img><ion-img src="./assets/img/malbar.jpg " style="height: 70px;width:80%;"></ion-img>
+    <ion-img src="./assets/img/gopi.png " style="height: 100px;width:80%;"></ion-img>
+    &nbsp;<ion-img src="./assets/img/av.png " style="height: 90px;width:70%;"></ion-img></ion-item>
+    <h1 class="c">Jewellers Found</h1>
+      <div class="ion-padding">
+          <ion-list class="b1">
+            <ion-item class="b1" (click)="selectval(item.name)" *ngFor="let item of list1"><br>
+             <ion-img src="./assets/img/malbar.jpg" shape="round"style="height: 40px; width: 10%;"></ion-img>
+          
+             &nbsp;{{item.name}}<br>
+       &nbsp; {{item.city}}
+  
+  
+        
+            </ion-item>
+          </ion-list>
+        </div>
+         
+  
+  </ion-content>
+  

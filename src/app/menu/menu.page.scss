@@ -1,0 +1,91 @@
+/*
+@font-face {
+    font-family: 'Luminari';
+    src: url('../assets/fonts/Luminari');//mine
+
+  }*/
+  .searh{
+      text-decoration-color: #FF6859;
+  }
+  .ic{
+      margin-left:100px;
+  }
+  .profile{
+      margin-top:10px;
+      margin-left:170px;
+      margin-right:50px;
+      size: 100px;
+      height:70px;
+      width:70px;
+  }
+  
+.menu1{
+    
+        --ion-background-color:#0D0D21;
+        color: #F4CA65; 
+        
+        --ion-font-family:Luminari;
+        height:50px;
+    
+}
+.menu2{
+    color:red;
+}
+.button1{
+    margin-top: 10px;
+    width:120px;
+    color:black;
+    --ion-color-primary:#F4CA65;
+    //top:600px;
+   // border-top: 200px;
+    //margin-top: 90px;
+    //text-align: left;
+    //width:380px;
+    //vertical-align: 30px;
+    //padding-right: 200px;
+    height: 50px;
+    margin-left: 20px;
+    
+
+    font-family: Roboto;
+}
+.button2{
+    margin-top: 10px;
+    width:120px;
+    --ion-color-primary:#FF6859;
+    color: #F4CA65;
+    //text-align: left;
+    //padding-right: 200px;
+   height: 50px;
+   font-family: Roboto;
+    
+    
+}
+.button3{
+    margin-top: 10px;
+    width:120px;
+    --ion-color-primary:#1EB980;
+    color: #F4CA65;
+    //padding-right: 200px;
+    font-family: Roboto;
+    height: 50px;
+    //margin-left: 50px;
+    
+}
+.chart{
+    --ion-color-primary:#1EB980;
+    
+    width: 50px;
+    height: 20px;
+
+}
+h2{
+    margin-left: 160px;
+    color:#F4CA65;
+    
+}
+label{
+    color:#F4CA65;
+    margin-left: 120px;
+    font-family: 'Roboto'
+}

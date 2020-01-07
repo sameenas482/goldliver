@@ -1,0 +1,120 @@
+<ion-header>
+    <ion-toolbar class="background">
+      <ion-title class="background"></ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="background">
+      <ion-item class="img">
+      
+          <ion-img style="width: 120px; " src="goldcoin.png"></ion-img>
+         
+        </ion-item>
+        <h4>Jeremy Joy</h4>
+    
+            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-text class="txt2">GOLDILVER</ion-text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <ion-text class="text2">10.28gms</ion-text><br>-->
+            <ion-row>
+              <ion-col class="txt2" size="6"  text-left >GOLDILVER<br><ion-text class="bal">Balance    & gms</ion-text>
+              </ion-col>
+              <ion-col class="text2" size="6" text-right >10.28gms
+              </ion-col>
+            </ion-row> <br><br><br>
+            <ion-item>
+                <ion-label class="value">
+                  {{value}}
+                </ion-label>
+              </ion-item>
+            <ion-button class="transact"  type="submit" expand="block"  onclick="location.href='/congratulation'">Transact</ion-button> 
+            
+              <div *ngFor="let numGroup of numberGroups">
+                <ion-button *ngFor="let num of numGroup" color="#494c53" (click)="onButtonPress(num)" class="calc-button">{{num}}</ion-button>
+              </div>
+            <ion-row>
+              <ion-col text-center>
+                  <ion-button  class="b" type="submit"  color="#944c53"><h1>1</h1></ion-button>
+                </ion-col>
+              <ion-col >
+                  <ion-button  class="b" type="submit"  color="#494c53"><h1>2</h1></ion-button>
+  
+              </ion-col>
+              <ion-col >
+                  <ion-button  class="b" type="submit"  color="#494c53"><h1>3</h1></ion-button>
+  
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col >
+  
+                  <ion-button  class="b" type="submit" color="#494c53"><h1>4</h1></ion-button>
+                </ion-col>
+              <ion-col  col-6>
+                  <ion-button  class="b" type="submit" color="#494c53"><h1>5</h1></ion-button>
+                </ion-col>
+              <ion-col >
+                  <ion-button  class="b" type="submit"  color="#494c53"><h1>6</h1></ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col  col-6>
+  
+                  <ion-button  class="b" type="submit"  color="#494c53"><h1>7</h1></ion-button>
+                </ion-col>
+              <ion-col >
+  
+                  <ion-button  class="b" type="submit" color="#494c53"><h1>8</h1></ion-button>
+                </ion-col>
+              <ion-col >
+                  <ion-button  class="b" type="submit" color="#494c53"><h1>9</h1></ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-6> 
+                  <ion-button  class="b1" type="submit" color="#494c53"><h1>.</h1></ion-button>
+                </ion-col>
+              <ion-col >
+                <ion-button  class="b" type="submit"  color="#494c53"><h1>0</h1></ion-button>
+                </ion-col>
+              <ion-col >
+                  <ion-button  class="b1" type="submit"  color="#494c53"><ion-icon color="#ffffff" size="large" ios="ios-backspace" md="md-backspace"></ion-icon>                </ion-button></ion-col>
+            </ion-row>-->
+       
+            <!--  
+          <ion-grid>
+    <ion-row>
+    <ion-col  size="3">1</ion-col>&nbsp;&nbsp;
+    <ion-col  size="3">2</ion-col>&nbsp;&nbsp;
+    <ion-col size="3">3</ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col class="x">4</ion-col>&nbsp;&nbsp;
+      <ion-col class="x">5</ion-col>&nbsp;&nbsp;
+      <ion-col class="x">6</ion-col>
+    </ion-row>
+  
+    <ion-row>
+        <ion-col class="x2">7</ion-col>&nbsp;&nbsp;
+        <ion-col class="x2">8</ion-col>&nbsp;&nbsp;
+        <ion-col class="x">9</ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col class="x1"><h1 color="#ffffff">.</h1></ion-col>&nbsp;&nbsp;
+          <ion-col class="x">0</ion-col>&nbsp;&nbsp;
+          <ion-col class="x1"> <ion-icon color="#ffffff" size="large" ios="ios-backspace" md="md-backspace"></ion-icon>
+          </ion-col>
+        </ion-row>
+        
+      
+  </ion-grid>
+             
+  
+  
+        -->
+            <!--<ion-item>
+          <ion-label>Numpad</ion-label>
+          <ion-input [(ngModel)]="numpad" mbsc-numpad-decimal [mbsc-options]="numpadSettings"placeholder="Please select..."></ion-input>
+      </ion-item>-->
+  
+  </ion-content>

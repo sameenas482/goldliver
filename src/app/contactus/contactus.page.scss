@@ -1,0 +1,89 @@
+.background{
+    --ion-background-color:#0D0D21;
+}
+
+.img{
+border-top: 60px;
+top:60px;
+align-items: center;
+align-content: center;
+align-self: center;
+left:120px;
+background-image: url(C:\Users\Lenovo\goldiver\image\goldcoin.png);
+
+}
+h4{
+    
+    margin-top: 60px;
+    text-align: center;
+    color: #F4CA65; 
+    font-family: 'luminari';
+}
+h2{
+    
+    margin-top: 0px;
+    text-align: center;
+    color: #F4CA65; 
+    font-family: 'luminari';
+}
+p{
+    
+    text-align: center;
+    color: #F4CA65;  
+    font-family:'roboto';  
+}
+a{
+
+    text-align: right;
+    left: 500px;
+    padding-left: 310px;
+    color:#F4CA65;
+}
+.button1{
+    width:500px;
+    color:black;
+    --ion-color-primary:#F4CA65;
+    //top:600px;
+   // border-top: 200px;
+    margin-top: 90px;
+    text-align: left;
+    //width:380px;
+    //vertical-align: 30px;
+    padding-right: 200px;
+    height: 50px;
+    margin-left: 50px;
+    font-family: "roboto";
+
+    
+}
+.button2{
+    width:500px;
+    --ion-color-primary:#383851;
+    color: #F4CA65;
+    text-align: left;
+    padding-right: 200px;
+    height: 50px;
+    margin-left: 50px;
+    
+    
+
+}
+/*
+.but{
+    //top:650px;
+   // border-top: 200px;
+    margin-top: 300px;
+    text-align: left;
+    width:380px;
+    vertical-align: 30px;
+
+
+}*/
+.label{
+    color:white;
+    text-size-adjust: 50px;
+}
+.label1{
+    color:#F4CA65;
+    text-size-adjust: 50px;
+}

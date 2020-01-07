@@ -1,0 +1,35 @@
+.background{
+    --ion-background-color:#0D0D21;
+}
+.btn-reg{
+    
+    --ion-color-primary:#F4CA65;
+    color: black;
+    font-family: "Roboto"
+}
+.x{
+
+    color:#F4CA65;
+    border: 1px solid #F4CA65;
+    max-width: 90%;
+    max-height: 45px;
+    left: 20px;
+    top: 1%;
+    align-items: center;
+    box-align: center;
+    margin-top: 8px;
+    background-color: #494c53;
+    
+}
+.person{
+    top: 1%;
+}
+
+.upload{
+        position: absolute;
+        opacity: 0;    
+}
+h3{
+   
+    color:#F4CA65;
+}

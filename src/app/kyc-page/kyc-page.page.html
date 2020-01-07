@@ -1,0 +1,62 @@
+<ion-header >
+    <ion-toolbar class="background">
+      <ion-title class="background">
+        
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+      
+    <ion-content class="background">
+    
+   
+    <ion-row>
+    <ion-col size="12" size-sm="8" offset-sm="2" text-center>
+    <ion-text ><h3>Complete KYC</h3></ion-text>  
+    
+    
+    <ion-list class="kycform">
+    <ion-item class= "x"><ion-input type="text" placeholder="First Name" color="warning" ngModel name="fname" required fname></ion-input> 
+        <ion-icon name="person" slot="end"  color="warning"></ion-icon> </ion-item>
+        
+    <ion-item class= "x">
+    <ion-input type="text" placeholder="Last Name" color="warning" ngModel name="lname" required lname> </ion-input>
+    <ion-icon name="contact" slot="end"  color="warning"></ion-icon> </ion-item>
+                      
+    <ion-item class= "x"><ion-input type="number" placeholder="Mobile Number" color="warning" 
+    ngModel name="mobile" required minLength="10" maxLength="10"
+    #mobctrl="ngModel"></ion-input>  <ion-icon name="call" slot="end"  color="warning"></ion-icon> 
+                      
+    <ion-item *ngIf="!mobctrl.valid && mobctrl.touched" lines="none"></ion-item>
+    </ion-item>
+                                             
+                    
+    <ion-item class= "x"> <ion-input type="email" placeholder="E-mail ID"  color="warning"   ngModel name="email" required email
+    #emailctrl="ngModel" ></ion-input><ion-icon name="at" slot="end"  color="warning"></ion-icon> 
+    </ion-item>
+                      
+    <ion-item class= "x"><ion-input type="text" placeholder="Address Line 1" color="warning" ngModel name="add1" required add1> </ion-input>
+    <ion-icon name="pin" slot="end"  color="warning"></ion-icon>  </ion-item>
+    
+    <ion-item class= "x"><ion-input type="text" placeholder="Address Line 2" color="warning" ngModel name="add2" required add1> </ion-input>
+        <ion-icon name="pin" slot="end"  color="warning"></ion-icon>  </ion-item>
+        
+                                    
+    <ion-item class= "x"><ion-input type="number" placeholder="PAN Nr." color="warning" ngModel name="pan" required pan> </ion-input>
+    <ion-icon name="card" slot="end"  color="warning"></ion-icon>  </ion-item>
+                      
+    <ion-item class= "x"> 
+    <ion-input class="upload" placeholder="Adhaar/Passport/Driving"  type="file"  accept="image/*" color="warning" ngModel name="apd" required apd></ion-input>                     
+                             
+    <ion-icon name="cloud-upload" slot="end"  color="warning"></ion-icon>                                  
+    </ion-item>
+    </ion-list>    
+    <ion-button class ="btn-reg"   expand="block" shape="round"  (click)="reg()"
+     >Register
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+     <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" slot="end"></ion-icon></ion-button>
+    <ion-icon name="call" color="warning" style="zoom: 2;"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <ion-icon name="text" color="warning" style="zoom: 2;"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <ion-icon name="mail" color="warning" style="zoom: 2;"><a href="mailto : abc@gmail.com"></a></ion-icon></ion-col>
+    </ion-row>
+    
+    </ion-content>
