@@ -448,12 +448,12 @@ let Chaincode = class {
 
   /************************************************************************************************
    * 
-   * Donor functions 
+   * User functions 
    * 
    ************************************************************************************************/
 
    /**
-   * Creates a new donor
+   * Creates a new user
    * 
    * @param {*} stub 
    * @param {*} args - JSON as follows:
@@ -463,67 +463,67 @@ let Chaincode = class {
    *    "registeredDate":"2018-10-22T11:52:20.182Z"
    * }
    */
-  async createDonor(stub, args) {
-    console.log('============= START : createDonor ===========');
-    console.log('##### createDonor arguments: ' + JSON.stringify(args));
+  async createUser(stub, args) {
+    console.log('============= START : createUser ===========');
+    console.log('##### createUser arguments: ' + JSON.stringify(args));
 
     // args is passed as a JSON string
     let json = JSON.parse(args);
-    let key = 'donor' + json['donorUserName'];
-    json['docType'] = 'donor';
+    let key = 'user' + json['gdUserName'];
+    json['docType'] = 'user';
 
-    console.log('##### createDonor payload: ' + JSON.stringify(json));
+    console.log('##### createUser payload: ' + JSON.stringify(json));
 
-    // Check if the donor already exists
-    let donorQuery = await stub.getState(key);
+    // Check if the user already exists
+    let gduserQuery = await stub.getState(key);
     if (donorQuery.toString()) {
-      throw new Error('##### createDonor - This donor already exists: ' + json['donorUserName']);
+      throw new Error('##### createUser - This user already exists: ' + json['gdUserName']);
     }
 
     await stub.putState(key, Buffer.from(JSON.stringify(json)));
-    console.log('============= END : createDonor ===========');
+    console.log('============= END : createUser ===========');
   }
 
   /**
-   * Retrieves a specfic donor
+   * Retrieves a specfic user
    * 
    * @param {*} stub 
    * @param {*} args 
    */
-  async queryDonor(stub, args) {
-    console.log('============= START : queryDonor ===========');
-    console.log('##### queryDonor arguments: ' + JSON.stringify(args));
+  async queryUser(stub, args) {
+    console.log('============= START : queryUser ===========');
+    console.log('##### queryUser arguments: ' + JSON.stringify(args));
 
     // args is passed as a JSON string
     let json = JSON.parse(args);
-    let key = 'donor' + json['donorUserName'];
-    console.log('##### queryDonor key: ' + key);
+    let key = 'user' + json['gdUserName'];
+    console.log('##### queryUser key: ' + key);
 
     return queryByKey(stub, key);
   }
 
   /**
-   * Retrieves all donors
+   * Retrieves all users
    * 
    * @param {*} stub 
    * @param {*} args 
    */
-  async queryAllDonors(stub, args) {
-    console.log('============= START : queryAllDonors ===========');
-    console.log('##### queryAllDonors arguments: ' + JSON.stringify(args));
+  async queryAllUsers(stub, args) {
+    console.log('============= START : queryAllUsers ===========');
+    console.log('##### queryAllUsers arguments: ' + JSON.stringify(args));
  
-    let queryString = '{"selector": {"docType": "donor"}}';
+    let queryString = '{"selector": {"docType": "user"}}';
     return queryByString(stub, queryString);
   }
 
   /************************************************************************************************
    * 
-   * NGO functions 
+   * ORG functions 
    * 
    ************************************************************************************************/
 
   /**
-   * Creates a new NGO
+   * Creates a new ORG
    * 
    * @param {*} stub 
    * @param {*} args - JSON as follows:
@@ -536,7 +536,7 @@ let Chaincode = class {
    *    "contactEmail":"pets@petco.com"
    * }
    */
-  async createNGO(stub, args) {
+  /*async createNGO(stub, args) {
     console.log('============= START : createNGO ===========');
     console.log('##### createNGO arguments: ' + JSON.stringify(args));
 
@@ -563,7 +563,7 @@ let Chaincode = class {
    * @param {*} stub 
    * @param {*} args 
    */
-  async queryNGO(stub, args) {
+  /*async queryNGO(stub, args) {
     console.log('============= START : queryNGO ===========');
     console.log('##### queryNGO arguments: ' + JSON.stringify(args));
 
@@ -581,13 +581,13 @@ let Chaincode = class {
    * @param {*} stub 
    * @param {*} args 
    */
-  async queryAllNGOs(stub, args) {
+  /*async queryAllNGOs(stub, args) {
     console.log('============= START : queryAllNGOs ===========');
     console.log('##### queryAllNGOs arguments: ' + JSON.stringify(args));
  
     let queryString = '{"selector": {"docType": "ngo"}}';
     return queryByString(stub, queryString);
-  }
+  }*/
 
   /************************************************************************************************
    * 
