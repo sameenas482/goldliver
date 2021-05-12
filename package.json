@@ -35,7 +35,7 @@
     "angular2-highcharts": "^0.5.5",
     "angularfire2": "^5.4.2",
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "com-badrit-base64": "^0.2.0",
     "cordova-android": "^8.1.0",
     "cordova-browser": "^6.0.0",
